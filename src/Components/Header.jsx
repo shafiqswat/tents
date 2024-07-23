@@ -97,7 +97,7 @@ function Header() {
               <img
                 id='image-sc'
                 src='/images/logo.jpg'
-                alt='مظلات وسواتر اختيار الرياض - مظلات الرياض - سواتر الرياض'
+                alt='القصيم بريده عنيزه  - سواتر الرياض'
               />
             </NavLink>
           </div>
@@ -113,7 +113,7 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/alriyad'>مظلات الرياض</NavLink>
+                <NavLink to='/alriyad'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
                     <NavLink to='/alriyad/sayaarat'>مظلات سيارات</NavLink>
@@ -148,7 +148,7 @@ function Header() {
                 </ul>
               </li>
               <li>
-                <NavLink to='/sawatiralriyad'>سواتر الرياض</NavLink>
+                <NavLink to='/sawatiralriyad'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
                     <NavLink to='/sawatiralriyad/hadid'>سواتر حديد</NavLink>
@@ -179,7 +179,7 @@ function Header() {
                 <NavLink to='/jalasatwaburjulat'>مظلات جلسات وبرجولات</NavLink>
               </li>
               <li>
-                <NavLink to='/shubukalriyad'>شبوك الرياض</NavLink>
+                <NavLink to='/shubukalriyad'>شبوك القصيم بريده عنيزه</NavLink>
               </li>
               <li>
                 <NavLink to='/biutshaer'>بيوت شعر</NavLink>
@@ -189,7 +189,7 @@ function Header() {
               </li>
               <li>
                 <NavLink to='/wasawatirfialriyad'>
-                  مظلات وسواتر في الرياض
+                  مظلات وسواتر في القصيم بريده عنيزه
                 </NavLink>
               </li>
               <li
@@ -256,7 +256,7 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/alriyad'>مظلات الرياض</NavLink>
+                <NavLink to='/alriyad'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
                     <NavLink to='/alriyad/sayaarat'>مظلات سيارات</NavLink>
@@ -291,7 +291,7 @@ function Header() {
                 </ul>
               </li>
               <li>
-                <NavLink to='/sawatiralriyad'>سواتر الرياض</NavLink>
+                <NavLink to='/sawatiralriyad'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
                     <NavLink to='/sawatiralriyad/hadid'>سواتر حديد</NavLink>
@@ -322,7 +322,7 @@ function Header() {
                 <NavLink to='/jalasatwaburjulat'>مظلات جلسات وبرجولات</NavLink>
               </li>
               <li>
-                <NavLink to='/shubukalriyad'>شبوك الرياض</NavLink>
+                <NavLink to='/shubukalriyad'>شبوك القصيم بريده عنيزه</NavLink>
               </li>
               <li>
                 <NavLink to='/biutshaer'>بيوت شعر</NavLink>
@@ -332,7 +332,7 @@ function Header() {
               </li>
               <li>
                 <NavLink to='/wasawatirfialriyad'>
-                  مظلات وسواتر في الرياض
+                  مظلات وسواتر في القصيم بريده عنيزه
                 </NavLink>
               </li>
             </ul>

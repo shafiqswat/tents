@@ -15,7 +15,7 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; // This maintains aspect ratio while covering the container
+  object-fit: cover;
 `;
 
 const Slider = () => (

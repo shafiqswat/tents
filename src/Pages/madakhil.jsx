@@ -7,12 +7,12 @@ import CardComponent from "../Components/layout/Card";
 function Madakhil() {
   return (
     <div>
-      {madakhilItem.map((item, index) => {
+      {madakhilItem.map((item, index) => (
         <CardComponent
           key={index}
           item={item}
-        />;
-      })}
+        />
+      ))}
     </div>
   );
 }

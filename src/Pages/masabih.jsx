@@ -7,12 +7,12 @@ import CardComponent from "../Components/layout/Card";
 function Masabih() {
   return (
     <div>
-      {masabihItem.map((item, index) => {
+      {masabihItem.map((item, index) => (
         <CardComponent
           key={index}
           item={item}
-        />;
-      })}
+        />
+      ))}
     </div>
   );
 }
