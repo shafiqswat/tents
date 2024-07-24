@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 // Mapping of path segments to Arabic values
 const pathToArabicMap = {
   "": "الرئيسية",
-  alriyad: "مظلات الرياض",
+  alqasim: "القصيم بريده عنيزه",
   sayaarat: "مظلات سيارات",
   hadayiq: "مظلات حدائق",
   masabih: "مظلات مسابح",
@@ -18,20 +18,20 @@ const pathToArabicMap = {
   masajid: "مظلات مساجد",
   qumash: "مظلات قماش pvc",
   shinku: "مظلات شينكو",
-  sawatiralriyad: "سواتر الرياض",
+  sawatiralriyad: "سواتر القصيم بريده عنيزه",
   hadid: "سواتر حديد",
   qumash1: "سواتر قماش",
   bilastik: "سواتر بلاستيك",
   likasan1: "سواتر لكسان",
   masabih1: "سواتر مسابح",
-  hanajiralriyad: "هناجر الرياض",
+  hanajiralriyad: "هناجر القصيم بريده عنيزه",
   jalasatwaburjulat: "مظلات جلسات وبرجولات",
-  shubukalriyad: "شبوك الرياض",
+  shubukalriyad: "شبوك القصيم بريده عنيزه",
   biutshaer: "بيوت شعر",
   almazid: "المزيد",
   manatiqalsueudia: "مظلات مناطق السعودية",
   aitasilbina: "اتصل بنا ",
-  wasawatirfialriyad: "مظلات وسواتر في الرياض",
+  wasawatirfialriyad: " مظلات وسواتر في القصيم بريده عنيزه",
 };
 
 function BreadCrumb() {

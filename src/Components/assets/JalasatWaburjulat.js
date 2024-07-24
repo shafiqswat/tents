@@ -7,7 +7,8 @@ const jalasatItem = [
   },
   {
     cardImage: "images/jalasat2.jpg",
-    cardTitle: "مظلات استراحات في الرياض | أشكال جديدة وتصاميم عصرية ",
+    cardTitle:
+      "مظلات استراحات في القصيم بريده عنيزه | أشكال جديدة وتصاميم عصرية ",
   },
   {
     cardImage: "images/jalasat3.jpeg",
@@ -16,15 +17,18 @@ const jalasatItem = [
   },
   {
     cardImage: "images/jalasat4.jpg",
-    cardTitle: "جلسات خارجية في الفناء وأسطح المنازل باقل التكاليف بالرياض",
+    cardTitle:
+      "جلسات خارجية في الفناء وأسطح المنازل باقل التكاليف القصيم بريده عنيزه",
   },
   {
     cardImage: "images/jalasat5.jpg",
-    cardTitle: "برجولات حدائق | برجولات قماش الرياض | أفضل اشكال وتصاميم ",
+    cardTitle:
+      "برجولات حدائق | برجولات قماش القصيم بريده عنيزه | أفضل اشكال وتصاميم ",
   },
   {
     cardImage: "images/jalasat6.jpg",
-    cardTitle: "مظلات جلسات خارجية 2024 | تركيب شركة اختيار الرياض ",
+    cardTitle:
+      "مظلات جلسات خارجية 2024 | تركيب شركة اختيار القصيم بريده عنيزه ",
   },
   {
     cardImage: "images/jalasat7.jpg",
@@ -32,11 +36,11 @@ const jalasatItem = [
   },
   {
     cardImage: "images/jalasat8.jpg",
-    cardTitle: "جلسات مظلات الرياض",
+    cardTitle: "جلسات مظلات القصيم بريده عنيزه",
   },
   {
     cardImage: "images/jalasat9.jpg",
-    cardTitle: "برجولات الرياض",
+    cardTitle: "برجولات القصيم بريده عنيزه",
   },
 ];
 export default jalasatItem;

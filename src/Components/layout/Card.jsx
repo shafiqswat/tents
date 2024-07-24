@@ -15,7 +15,7 @@ function CardComponent({ item }) {
         <div className='imageWrapper'>
           <img
             src={item.cardImage}
-            alt='cardImage'
+            alt={item.cardSpan}
           />
         </div>
         <div className='cardTitle'>
@@ -30,8 +30,8 @@ function CardComponent({ item }) {
                 target='_blank'
                 rel='noopener noreferrer'>
                 <img
-                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
-                  alt='facebook'
+                  src='facebook-icon.png'
+                  alt='Share on Facebook'
                   className='socialicon socialicon-facebook'
                 />
               </a>
@@ -40,8 +40,8 @@ function CardComponent({ item }) {
                 target='_blank'
                 rel='noopener noreferrer'>
                 <img
-                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
-                  alt='twitter'
+                  src='twitter-icon.png'
+                  alt='Share on Twitter'
                   className='socialicon socialicon-twitter'
                 />
               </a>
@@ -50,8 +50,8 @@ function CardComponent({ item }) {
                 target='_blank'
                 rel='noopener noreferrer'>
                 <img
-                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
-                  alt='linkedin'
+                  src='linkedin-icon.png'
+                  alt='Share on LinkedIn'
                   className='socialicon socialicon-linkedin'
                 />
               </a>
@@ -60,8 +60,8 @@ function CardComponent({ item }) {
                 target='_blank'
                 rel='noopener noreferrer'>
                 <img
-                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
-                  alt='instagram'
+                  src='instagram-icon.png'
+                  alt='Share on Instagram'
                   className='socialicon socialicon-instagram'
                 />
               </a>

@@ -3,7 +3,7 @@
 const hadidItem = [
   {
     cardImage: "/images/alriyad6.jpg",
-    cardTitle: "سواتر صاج شينكو|سعر متر سواتر شينكو في الرياض",
+    cardTitle: "سواتر صاج شينكو|سعر متر سواتر شينكو في القصيم بريده عنيزه",
   },
   {
     cardImage: "/images/alriyad9.jpg",
@@ -13,7 +13,7 @@ const hadidItem = [
   {
     cardImage: "/images/alriyad6.jpg",
     cardTitle:
-      "سواتر شينكو بالرياض | تركيب سواتر صاج شينكو بسعر يبدأمن 70 ريال للمتر",
+      "سواتر شينكو القصيم بريده عنيزه | تركيب سواتر صاج شينكو بسعر يبدأمن 70 ريال للمتر",
   },
 ];
 

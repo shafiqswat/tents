@@ -1,18 +1,18 @@
 /** @format */
 
 import React from "react";
-import likasanItem from "../Components/assets/Likasan";
+import likasan1Item from "../Components/assets/Likasan1";
 import CardComponent from "../Components/layout/Card";
 
 function Likasan() {
   return (
     <div>
-      {likasanItem.map((item, index) => {
+      {likasan1Item.map((item, index) => (
         <CardComponent
           key={index}
           item={item}
-        />;
-      })}
+        />
+      ))}
     </div>
   );
 }

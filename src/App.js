@@ -1,146 +1,182 @@
 /** @format */
-
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/home";
 import Dashboard from "./Components/layout/dashboard";
-import Sayaarat from "./Pages/Sayaarat";
-import Alriyad from "./Pages/alriyad";
-import Hadayiq from "./Pages/hadayiq";
-import Masabih from "./Pages/masabih";
-import Madakhil from "./Pages/madakhil";
-import Likasan from "./Pages/likasan";
-import SawatirAlriyad from "./Pages/sawatirAlriyad";
-import Madaris from "./Pages/madaris";
-import Aswaq from "./Pages/aswaq";
-import Masajid from "./Pages/masajid";
-import Qumash from "./Pages/qumash";
-import Shinku from "./Pages/shinku";
-import Hadid from "./Pages/hadid";
-import Qumash1 from "./Pages/qumash1";
-import Bilastik from "./Pages/bilastik";
-import Likasan1 from "./Pages/likasan1";
-import Masabih1 from "./Pages/masabih1";
-import HanajirAlriyad from "./Pages/hanajirAlriyad";
-import JalasatWaburjulat from "./Pages/jalasatWaburjulat";
-import ShubukAlriyad from "./Pages/shubukAlriyad";
-import BiutShaer from "./Pages/biutShaer";
-import AitasilBina from "./Pages/aitasilBina";
-import Almazid from "./Pages/almazid";
-import ManatiqAlsueudia from "./Pages/manatiqAlsueudia";
-import WasawatirFiAlriyad from "./Pages/wasawatirFiAlriyad";
+import { Helmet } from "react-helmet";
+
+// Lazy load the components
+const Home = lazy(() => import("./Pages/home"));
+const Sayaarat = lazy(() => import("./Pages/Sayaarat"));
+const Alriyad = lazy(() => import("./Pages/alriyad"));
+const Hadayiq = lazy(() => import("./Pages/hadayiq"));
+const Masabih = lazy(() => import("./Pages/masabih"));
+const Madakhil = lazy(() => import("./Pages/madakhil"));
+const Likasan = lazy(() => import("./Pages/likasan"));
+const SawatirAlriyad = lazy(() => import("./Pages/sawatirAlriyad"));
+const Madaris = lazy(() => import("./Pages/madaris"));
+const Aswaq = lazy(() => import("./Pages/aswaq"));
+const Masajid = lazy(() => import("./Pages/masajid"));
+const Qumash = lazy(() => import("./Pages/qumash"));
+const Shinku = lazy(() => import("./Pages/shinku"));
+const Hadid = lazy(() => import("./Pages/hadid"));
+const Qumash1 = lazy(() => import("./Pages/qumash1"));
+const Bilastik = lazy(() => import("./Pages/bilastik"));
+const Likasan1 = lazy(() => import("./Pages/likasan1"));
+const Masabih1 = lazy(() => import("./Pages/masabih1"));
+const HanajirAlriyad = lazy(() => import("./Pages/hanajirAlriyad"));
+const JalasatWaburjulat = lazy(() => import("./Pages/jalasatWaburjulat"));
+const ShubukAlriyad = lazy(() => import("./Pages/shubukAlriyad"));
+const BiutShaer = lazy(() => import("./Pages/biutShaer"));
+const AitasilBina = lazy(() => import("./Pages/aitasilBina"));
+const Almazid = lazy(() => import("./Pages/almazid"));
+const ManatiqAlsueudia = lazy(() => import("./Pages/manatiqAlsueudia"));
+const WasawatirFiAlriyad = lazy(() => import("./Pages/wasawatirFiAlriyad"));
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+        <Helmet>
+          <title>Tents</title>
+          <meta
+            name='description'
+            content='Explore our wide range of tents, including khiyam, muzala, and muzalat. Perfect for your next adventure.'
+          />
+          <meta
+            name='keywords'
+            content='tent, tents, khiyam, muzala, muzalat, الخيام, camping, outdoor, adventure'
+          />
+          <meta
+            property='og:title'
+            content='Top Quality Tents '
+          />
+          <meta
+            property='og:description'
+            content='Explore our wide range of tents, including khiyam, muzala, and muzalat. Perfect for your next adventure.'
+          />
+          <meta
+            property='og:image'
+            content='https://tents-f9b9d.web.app/images/slider1.jpg'
+          />
+          <meta
+            property='og:url'
+            content='https://tents-f9b9d.web.app/'
+          />
+          <meta
+            name='twitter:card'
+            content='https://tents-f9b9d.web.app/images/slider1.jp'
+          />
+        </Helmet>
         <Dashboard>
-          <Routes>
-            <Route
-              path='/'
-              element={<Home />}
-            />
-            <Route
-              path='/alriyad'
-              element={<Alriyad />}
-            />
-            <Route
-              path='/alriyad/sayaarat'
-              element={<Sayaarat />}
-            />
-            <Route
-              path='/alriyad/hadayiq'
-              element={<Hadayiq />}
-            />
-            <Route
-              path='/alriyad/masabih'
-              element={<Masabih />}
-            />
-            <Route
-              path='/alriyad/madakhil'
-              element={<Madakhil />}
-            />
-            <Route
-              path='/alriyad/likasan'
-              element={<Likasan />}
-            />
-            <Route
-              path='/alriyad/madaris'
-              element={<Madaris />}
-            />
-            <Route
-              path='/alriyad/aswaq'
-              element={<Aswaq />}
-            />
-            <Route
-              path='/alriyad/masajid'
-              element={<Masajid />}
-            />
-            <Route
-              path='/alriyad/qumash'
-              element={<Qumash />}
-            />
-            <Route
-              path='/alriyad/shinku'
-              element={<Shinku />}
-            />
-            <Route
-              path='/sawatiralriyad'
-              element={<SawatirAlriyad />}
-            />
-            <Route
-              path='/sawatiralriyad/hadid'
-              element={<Hadid />}
-            />
-            <Route
-              path='/sawatiralriyad/qumash1'
-              element={<Qumash1 />}
-            />
-            <Route
-              path='/sawatiralriyad/bilastik'
-              element={<Bilastik />}
-            />
-            <Route
-              path='/sawatiralriyad/likasan1'
-              element={<Likasan1 />}
-            />
-            <Route
-              path='/sawatiralriyad/masabih1'
-              element={<Masabih1 />}
-            />
-            <Route
-              path='/manatiqalsueudia'
-              element={<ManatiqAlsueudia />}
-            />
-            <Route
-              path='/hanajiralriyad'
-              element={<HanajirAlriyad />}
-            />
-            <Route
-              path='/jalasatwaburjulat'
-              element={<JalasatWaburjulat />}
-            />
-            <Route
-              path='/shubukalriyad'
-              element={<ShubukAlriyad />}
-            />
-            <Route
-              path='/biutshaer'
-              element={<BiutShaer />}
-            />
-            <Route
-              path='/aitasilbina'
-              element={<AitasilBina />}
-            />
-            <Route
-              path='/almazid'
-              element={<Almazid />}
-            />
-            <Route
-              path='/wasawatirfialriyad'
-              element={<WasawatirFiAlriyad />}
-            />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route
+                path='/'
+                element={<Home />}
+              />
+              <Route
+                path='/alqasim'
+                element={<Alriyad />}
+              />
+              <Route
+                path='/alqasim/sayaarat'
+                element={<Sayaarat />}
+              />
+              <Route
+                path='/alqasim/hadayiq'
+                element={<Hadayiq />}
+              />
+              <Route
+                path='/alqasim/masabih'
+                element={<Masabih />}
+              />
+              <Route
+                path='/alqasim/madakhil'
+                element={<Madakhil />}
+              />
+              <Route
+                path='/alqasim/likasan'
+                element={<Likasan />}
+              />
+              <Route
+                path='/alqasim/madaris'
+                element={<Madaris />}
+              />
+              <Route
+                path='/alqasim/aswaq'
+                element={<Aswaq />}
+              />
+              <Route
+                path='/alqasim/masajid'
+                element={<Masajid />}
+              />
+              <Route
+                path='/alqasim/qumash'
+                element={<Qumash />}
+              />
+              <Route
+                path='/alqasim/shinku'
+                element={<Shinku />}
+              />
+              <Route
+                path='/sawatiralqasim'
+                element={<SawatirAlriyad />}
+              />
+              <Route
+                path='/sawatiralqasim/hadid'
+                element={<Hadid />}
+              />
+              <Route
+                path='/sawatiralqasim/qumash1'
+                element={<Qumash1 />}
+              />
+              <Route
+                path='/sawatiralqasim/bilastik'
+                element={<Bilastik />}
+              />
+              <Route
+                path='/sawatiralqasim/likasan1'
+                element={<Likasan1 />}
+              />
+              <Route
+                path='/sawatiralqasim/masabih1'
+                element={<Masabih1 />}
+              />
+              <Route
+                path='/manatiqalsueudia'
+                element={<ManatiqAlsueudia />}
+              />
+              <Route
+                path='/hanajiralqasim'
+                element={<HanajirAlriyad />}
+              />
+              <Route
+                path='/jalasatwaburjulat'
+                element={<JalasatWaburjulat />}
+              />
+              <Route
+                path='/shubukalqasim'
+                element={<ShubukAlriyad />}
+              />
+              <Route
+                path='/biutshaer'
+                element={<BiutShaer />}
+              />
+              <Route
+                path='/aitasilbina'
+                element={<AitasilBina />}
+              />
+              <Route
+                path='/almazid'
+                element={<Almazid />}
+              />
+              <Route
+                path='/wasawatirfialqasim'
+                element={<WasawatirFiAlriyad />}
+              />
+            </Routes>
+          </Suspense>
         </Dashboard>
       </BrowserRouter>
     </div>

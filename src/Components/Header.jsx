@@ -113,59 +113,59 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/alriyad'>القصيم بريده عنيزه</NavLink>
+                <NavLink to='/alqasim'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
-                    <NavLink to='/alriyad/sayaarat'>مظلات سيارات</NavLink>
+                    <NavLink to='/alqasim/sayaarat'>مظلات سيارات</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/hadayiq'>مظلات حدائق</NavLink>
+                    <NavLink to='/alqasim/hadayiq'>مظلات حدائق</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/masabih'>مظلات مسابح</NavLink>
+                    <NavLink to='/alqasim/masabih'>مظلات مسابح</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/madakhil'>مظلات مداخل</NavLink>
+                    <NavLink to='/alqasim/madakhil'>مظلات مداخل</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/likasan'>مظلات لكسان</NavLink>
+                    <NavLink to='/alqasim/likasan'>مظلات لكسان</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/madaris'>مظلات مدارس</NavLink>
+                    <NavLink to='/alqasim/madaris'>مظلات مدارس</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/aswaq'>مظلات اسواق</NavLink>
+                    <NavLink to='/alqasim/aswaq'>مظلات اسواق</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/masajid'>مظلات مساجد</NavLink>
+                    <NavLink to='/alqasim/masajid'>مظلات مساجد</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/qumash'>مظلات قماش pvc</NavLink>
+                    <NavLink to='/alqasim/qumash'>مظلات قماش pvc</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/shinku'>مظلات شينكو</NavLink>
+                    <NavLink to='/alqasim/shinku'>مظلات شينكو</NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <NavLink to='/sawatiralriyad'>القصيم بريده عنيزه</NavLink>
+                <NavLink to='/sawatiralqasim'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
-                    <NavLink to='/sawatiralriyad/hadid'>سواتر حديد</NavLink>
+                    <NavLink to='/sawatiralqasim/hadid'>سواتر حديد</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/qumash1'>سواتر قماش</NavLink>
+                    <NavLink to='/sawatiralqasim/qumash1'>سواتر قماش</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/bilastik'>
+                    <NavLink to='/sawatiralqasim/bilastik'>
                       سواتر بلاستيك
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/likasan1'>سواتر لكسان</NavLink>
+                    <NavLink to='/sawatiralqasim/likasan1'>سواتر لكسان</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/masabih1'>سواتر مسابح</NavLink>
+                    <NavLink to='/sawatiralqasim/masabih1'>سواتر مسابح</NavLink>
                   </li>
                 </ul>
               </li>
@@ -173,13 +173,13 @@ function Header() {
                 <NavLink to='/manatiqalsueudia'>مظلات مناطق السعودية</NavLink>
               </li>
               <li>
-                <NavLink to='/hanajiralriyad'>هناجر الرياض</NavLink>
+                <NavLink to='/hanajiralqasim'>هناجر الرياض</NavLink>
               </li>
               <li>
                 <NavLink to='/jalasatwaburjulat'>مظلات جلسات وبرجولات</NavLink>
               </li>
               <li>
-                <NavLink to='/shubukalriyad'>شبوك القصيم بريده عنيزه</NavLink>
+                <NavLink to='/shubukalqasim'>شبوك القصيم بريده عنيزه</NavLink>
               </li>
               <li>
                 <NavLink to='/biutshaer'>بيوت شعر</NavLink>
@@ -188,7 +188,7 @@ function Header() {
                 <NavLink to='/aitasilbina'>اتصل بنا</NavLink>
               </li>
               <li>
-                <NavLink to='/wasawatirfialriyad'>
+                <NavLink to='/wasawatirfialqasim'>
                   مظلات وسواتر في القصيم بريده عنيزه
                 </NavLink>
               </li>
@@ -256,59 +256,59 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/alriyad'>القصيم بريده عنيزه</NavLink>
+                <NavLink to='/alqasim'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
-                    <NavLink to='/alriyad/sayaarat'>مظلات سيارات</NavLink>
+                    <NavLink to='/alqasim/sayaarat'>مظلات سيارات</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/hadayiq'>مظلات حدائق</NavLink>
+                    <NavLink to='/alqasim/hadayiq'>مظلات حدائق</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/masabih'>مظلات مسابح</NavLink>
+                    <NavLink to='/alqasim/masabih'>مظلات مسابح</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/madakhil'>مظلات مداخل</NavLink>
+                    <NavLink to='/alqasim/madakhil'>مظلات مداخل</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/likasan'>مظلات لكسان</NavLink>
+                    <NavLink to='/alqasim/likasan'>مظلات لكسان</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/madaris'>مظلات مدارس</NavLink>
+                    <NavLink to='/alqasim/madaris'>مظلات مدارس</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/aswaq'>مظلات اسواق</NavLink>
+                    <NavLink to='/alqasim/aswaq'>مظلات اسواق</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/masajid'>مظلات مساجد</NavLink>
+                    <NavLink to='/alqasim/masajid'>مظلات مساجد</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/qumash'>مظلات قماش pvc</NavLink>
+                    <NavLink to='/alqasim/qumash'>مظلات قماش pvc</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/alriyad/shinku'>مظلات شينكو</NavLink>
+                    <NavLink to='/alqasim/shinku'>مظلات شينكو</NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <NavLink to='/sawatiralriyad'>القصيم بريده عنيزه</NavLink>
+                <NavLink to='/sawatiralqasim'>القصيم بريده عنيزه</NavLink>
                 <ul>
                   <li>
-                    <NavLink to='/sawatiralriyad/hadid'>سواتر حديد</NavLink>
+                    <NavLink to='/sawatiralqasim/hadid'>سواتر حديد</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/qumash1'>سواتر قماش</NavLink>
+                    <NavLink to='/sawatiralqasim/qumash1'>سواتر قماش</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/bilastik'>
+                    <NavLink to='/sawatiralqasim/bilastik'>
                       سواتر بلاستيك
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/likasan1'>سواتر لكسان</NavLink>
+                    <NavLink to='/sawatiralqasim/likasan1'>سواتر لكسان</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/sawatiralriyad/masabih1'>سواتر مسابح</NavLink>
+                    <NavLink to='/sawatiralqasim/masabih1'>سواتر مسابح</NavLink>
                   </li>
                 </ul>
               </li>
@@ -331,7 +331,7 @@ function Header() {
                 <NavLink to='/aitasilbina'>اتصل بنا</NavLink>
               </li>
               <li>
-                <NavLink to='/wasawatirfialriyad'>
+                <NavLink to='/wasawatirfialqasim'>
                   مظلات وسواتر في القصيم بريده عنيزه
                 </NavLink>
               </li>

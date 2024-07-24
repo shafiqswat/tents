@@ -8,7 +8,7 @@ const sayaaratItem = [
   {
     cardImage: "/images/sayara2.jpg",
     cardTitle:
-      "تركيب مظلات مواقف سيارات اسعار مظلات الخارجية الرياض مظلة سياره",
+      "تركيب مظلات مواقف سيارات اسعار مظلات الخارجية القصيم بريده عنيزه مظلة سياره",
   },
   {
     cardImage: "/images/sayara3.jpeg",
@@ -20,15 +20,16 @@ const sayaaratItem = [
   },
   {
     cardImage: "/images/sayara5.jpg",
-    cardTitle: "اسعار مظلات سيارات خارجية بالشارع بالرياض صور حصريه",
+    cardTitle: "اسعار مظلات سيارات خارجية بالشارع القصيم بريده عنيزه صور حصريه",
   },
   {
     cardImage: "/images/sayara6.jpg",
-    cardTitle: "مظله سياره بالرياض - 0500173090",
+    cardTitle: "مظله سياره القصيم بريده عنيزه - 0500173090",
   },
   {
     cardImage: "/images/sayara7.jpeg",
-    cardTitle: "مظلات سيارات |مظله سيارة متحركة| تكلفه مظله سيارة بالرياض",
+    cardTitle:
+      "مظلات سيارات |مظله سيارة متحركة| تكلفه مظله سيارة القصيم بريده عنيزه",
   },
   {
     cardImage: "/images/sayara8.jpg",
@@ -40,7 +41,8 @@ const sayaaratItem = [
   },
   {
     cardImage: "/images/sayara10.jpg",
-    cardTitle: "أسعار وعروض مظلات سيارات بالرياض|مظلات سيارات للبيع بسعر مخفض",
+    cardTitle:
+      "أسعار وعروض مظلات سيارات القصيم بريده عنيزه|مظلات سيارات للبيع بسعر مخفض",
   },
   {
     cardImage: "/images/sayara11.jpg",
