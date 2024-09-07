@@ -57,7 +57,7 @@ function App() {
           />
           <meta
             property='og:image'
-            content='https://tents-f9b9d.web.app/images/slider1.jpg'
+            content='https://xn------ozeabbjoc1bi1bza5e9jeihbm3d3ag.com/images/slider1.jpg'
           />
           <meta
             property='og:url'
@@ -65,7 +65,7 @@ function App() {
           />
           <meta
             name='twitter:card'
-            content='https://tents-f9b9d.web.app/images/slider1.jpg'
+            content='https://xn------ozeabbjoc1bi1bza5e9jeihbm3d3ag.com/images/slider1.jpg'
           />
           <meta
             name='robots'

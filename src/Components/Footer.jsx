@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import { Helmet } from "react-helmet"; // Import react-helmet if you want to manage head tags
+import { Helmet } from "react-helmet";
 
 function Footer() {
   return (

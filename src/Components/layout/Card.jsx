@@ -56,8 +56,8 @@ function CardComponent({ item }) {
                 onClick={() => handleShare("facebook")}
                 aria-label='Share on Facebook'>
                 <img
-                  src='facebook-icon.png'
-                  alt='Share on Facebook'
+                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
+                  alt='facebook'
                   className='socialicon socialicon-facebook'
                 />
               </button>
@@ -65,8 +65,8 @@ function CardComponent({ item }) {
                 onClick={() => handleShare("twitter")}
                 aria-label='Share on Twitter'>
                 <img
-                  src='twitter-icon.png'
-                  alt='Share on Twitter'
+                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
+                  alt='twitter'
                   className='socialicon socialicon-twitter'
                 />
               </button>
@@ -74,8 +74,8 @@ function CardComponent({ item }) {
                 onClick={() => handleShare("linkedin")}
                 aria-label='Share on LinkedIn'>
                 <img
-                  src='linkedin-icon.png'
-                  alt='Share on LinkedIn'
+                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
+                  alt='linkedin'
                   className='socialicon socialicon-linkedin'
                 />
               </button>
@@ -83,8 +83,8 @@ function CardComponent({ item }) {
                 onClick={() => handleShare("instagram")}
                 aria-label='Share on Instagram'>
                 <img
-                  src='instagram-icon.png'
-                  alt='Share on Instagram'
+                  src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII='
+                  alt='instagram'
                   className='socialicon socialicon-instagram'
                 />
               </button>
