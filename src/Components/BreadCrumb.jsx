@@ -11,7 +11,7 @@ const pathToArabicMap = {
   sayaarat: "مظلات سيارات",
   hadayiq: "مظلات حدائق",
   masabih: "مظلات مسابح",
-  madakhil: " مظلات مداخل",
+  madakhil: "مظلات مداخل",
   likasan: "مظلات لكسان",
   madaris: "مظلات مدارس",
   aswaq: "مظلات اسواق",
@@ -30,8 +30,8 @@ const pathToArabicMap = {
   biutshaer: "بيوت شعر",
   almazid: "المزيد",
   manatiqalsueudia: "مظلات مناطق السعودية",
-  aitasilbina: "اتصل بنا ",
-  wasawatirfialriyad: " مظلات وسواتر في القصيم بريده عنيزه",
+  aitasilbina: "اتصل بنا",
+  wasawatirfialriyad: "مظلات وسواتر في القصيم بريده عنيزه",
 };
 
 function BreadCrumb() {
@@ -49,17 +49,28 @@ function BreadCrumb() {
 
   return (
     <BreadcrumbContainer>
-      <BreadcrumbItem href='/'>{pathToArabicMap[""]}</BreadcrumbItem>
-      {breadcrumbs.map((crumb, index) => (
-        <React.Fragment key={index}>
-          <BreadcrumbSeparator>/</BreadcrumbSeparator>
-          <BreadcrumbItem
-            href={crumb.href}
-            className={index === breadcrumbs.length - 1 ? "active" : ""}>
-            {crumb.name}
-          </BreadcrumbItem>
-        </React.Fragment>
-      ))}
+      <nav
+        aria-label='Breadcrumb'
+        role='navigation'>
+        <BreadcrumbItem
+          href='/'
+          aria-current='page'>
+          {pathToArabicMap[""]}
+        </BreadcrumbItem>
+        {breadcrumbs.map((crumb, index) => (
+          <React.Fragment key={index}>
+            <BreadcrumbSeparator>/</BreadcrumbSeparator>
+            <BreadcrumbItem
+              href={crumb.href}
+              className={index === breadcrumbs.length - 1 ? "active" : ""}
+              aria-current={
+                index === breadcrumbs.length - 1 ? "page" : undefined
+              }>
+              {crumb.name}
+            </BreadcrumbItem>
+          </React.Fragment>
+        ))}
+      </nav>
     </BreadcrumbContainer>
   );
 }

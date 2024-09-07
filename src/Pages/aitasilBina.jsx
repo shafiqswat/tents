@@ -1,11 +1,10 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 // Styled components...
-
 const FormContainer = styled.div`
   max-width: 700px;
   margin: 20px auto;
@@ -87,81 +86,114 @@ function AitasilBina() {
     message: "",
   });
 
+  useEffect(() => {
+    document.title = "اتصل بنا - Aitasil Bina";
+
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      name: "اتصل بنا",
+      description: "مظلات وسواتر القصيم	",
+      url: window.location.href,
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post(`${process.env.REACT_APP_BACKEND_URL}/send-email`, formData)
-      .then((response) => {
-        alert("Email sent successfully!");
-      })
-      .catch((error) => {
-        alert("Error sending email: " + error.message);
-      });
+
+    const templateParams = {
+      from_name: formData.name, // Sender's name
+      from_email: formData.email, // Sender's email
+      to_name: "Your Name", // Recipient name, replace with actual name or leave static
+      message: formData.message, // The message content
+    };
+
+    emailjs
+      .send(
+        "service_pq17tun", // Your EmailJS service ID
+        "template_jfn9wsk", // Your EmailJS template ID
+        templateParams, // Passing the template parameters
+        "6BDFjDmtzzcvhWvzD" // Your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          alert("Error sending email: " + error.text);
+        }
+      );
   };
 
   return (
-    <FormContainer>
-      <FormTitle>اتصل بنا</FormTitle>
-      <form onSubmit={handleSubmit}>
-        <FormGroup>
-          <Label htmlFor='contactType'>جهة الإتصال</Label>
-          <Select
-            id='contactType'
-            name='contactType'
-            required
-            onChange={handleChange}>
-            <option value=''>اختر جهة الاتصال</option>
-            <option value='sales'>المبيعات</option>
-            <option value='support'>الدعم</option>
-            <option value='general'>عام</option>
-          </Select>
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor='name'>اسمك</Label>
-          <Input
-            type='text'
-            id='name'
-            name='name'
-            required
-            onChange={handleChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor='email'>بريدك الإلكتروني</Label>
-          <Input
-            type='email'
-            id='email'
-            name='email'
-            required
-            onChange={handleChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor='subject'>عنوان الرسالة</Label>
-          <Input
-            type='text'
-            id='subject'
-            name='subject'
-            required
-            onChange={handleChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor='message'>الرسالة</Label>
-          <Textarea
-            id='message'
-            name='message'
-            rows='5'
-            required
-            onChange={handleChange}></Textarea>
-        </FormGroup>
-        <SubmitButton type='submit'>أرسل</SubmitButton>
-      </form>
-    </FormContainer>
+    <main>
+      <FormContainer>
+        <FormTitle>اتصل بنا</FormTitle>
+        <form onSubmit={handleSubmit}>
+          <FormGroup>
+            <Label htmlFor='contactType'>جهة الإتصال</Label>
+            <Select
+              id='contactType'
+              name='contactType'
+              required
+              onChange={handleChange}>
+              <option value=''>اختر جهة الاتصال</option>
+              <option value='sales'>المبيعات</option>
+              <option value='support'>الدعم</option>
+              <option value='general'>عام</option>
+            </Select>
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor='name'>اسمك</Label>
+            <Input
+              type='text'
+              id='name'
+              name='name'
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor='email'>بريدك الإلكتروني</Label>
+            <Input
+              type='email'
+              id='email'
+              name='email'
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor='subject'>عنوان الرسالة</Label>
+            <Input
+              type='text'
+              id='subject'
+              name='subject'
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor='message'>الرسالة</Label>
+            <Textarea
+              id='message'
+              name='message'
+              rows='5'
+              required
+              onChange={handleChange}></Textarea>
+          </FormGroup>
+          <SubmitButton type='submit'>أرسل</SubmitButton>
+        </form>
+      </FormContainer>
+    </main>
   );
 }
 

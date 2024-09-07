@@ -9,6 +9,32 @@ function CardComponent({ item }) {
   const textToShare = encodeURIComponent(item.cardTitle);
   const urlToShare = encodeURIComponent(currentUrl);
 
+  const handleShare = (platform) => {
+    let shareUrl = "";
+
+    switch (platform) {
+      case "facebook":
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${urlToShare}`;
+        break;
+      case "twitter":
+        shareUrl = `https://twitter.com/intent/tweet?url=${urlToShare}&text=${textToShare}`;
+        break;
+      case "linkedin":
+        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${urlToShare}`;
+        break;
+      case "instagram":
+        // Instagram doesn't support direct URL sharing. You can customize the behavior here.
+        alert(
+          "Instagram does not support direct URL sharing. Please share via the app."
+        );
+        return;
+      default:
+        return;
+    }
+
+    window.open(shareUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <CardContainer>
       <div className='cardContent'>
@@ -16,6 +42,7 @@ function CardComponent({ item }) {
           <img
             src={item.cardImage}
             alt={item.cardSpan}
+            loading='lazy'
           />
         </div>
         <div className='cardTitle'>
@@ -25,52 +52,48 @@ function CardComponent({ item }) {
           <div className='titleIcon'>
             <div className='titleShare typcn typcn-export-outline'></div>
             <div className='dropDownContent'>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${urlToShare}`}
-                target='_blank'
-                rel='noopener noreferrer'>
+              <button
+                onClick={() => handleShare("facebook")}
+                aria-label='Share on Facebook'>
                 <img
                   src='facebook-icon.png'
                   alt='Share on Facebook'
                   className='socialicon socialicon-facebook'
                 />
-              </a>
-              <a
-                href={`https://twitter.com/intent/tweet?url=${urlToShare}&text=${textToShare}`}
-                target='_blank'
-                rel='noopener noreferrer'>
+              </button>
+              <button
+                onClick={() => handleShare("twitter")}
+                aria-label='Share on Twitter'>
                 <img
                   src='twitter-icon.png'
                   alt='Share on Twitter'
                   className='socialicon socialicon-twitter'
                 />
-              </a>
-              <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${urlToShare}`}
-                target='_blank'
-                rel='noopener noreferrer'>
+              </button>
+              <button
+                onClick={() => handleShare("linkedin")}
+                aria-label='Share on LinkedIn'>
                 <img
                   src='linkedin-icon.png'
                   alt='Share on LinkedIn'
                   className='socialicon socialicon-linkedin'
                 />
-              </a>
-              <a
-                href={`https://www.instagram.com/?url=${urlToShare}`}
-                target='_blank'
-                rel='noopener noreferrer'>
+              </button>
+              <button
+                onClick={() => handleShare("instagram")}
+                aria-label='Share on Instagram'>
                 <img
                   src='instagram-icon.png'
                   alt='Share on Instagram'
                   className='socialicon socialicon-instagram'
                 />
-              </a>
+              </button>
             </div>
           </div>
           <div className='title'>
-            <a href='#'>
-              <h2>{item.cardTitle}</h2>
-            </a>
+            <h2>
+              <strong>{item.cardTitle}</strong>
+            </h2>
           </div>
         </div>
       </div>

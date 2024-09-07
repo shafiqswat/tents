@@ -38,22 +38,22 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Helmet>
-          <title>Tents</title>
+          <title>مدينةالخيام المظلات</title>
           <meta
             name='description'
-            content='Explore our wide range of tents, including khiyam, muzala, and muzalat. Perfect for your next adventure.'
+            content='تصفح مجموعتنا الواسعة من الخيام الملكية والمظلات والسواتر والبرجولات في منطقة القصيم. حلول مثالية للرحلات والأنشطة الخارجية.'
           />
           <meta
             name='keywords'
-            content='tent, tents, khiyam, muzala, muzalat, الخيام, camping, outdoor, adventure'
+            content='خيام, ملكي, مظلات, سواتر, برجولات, القصيم, outdoor, camping'
           />
           <meta
             property='og:title'
-            content='Top Quality Tents '
+            content='أفضل خيام ملكي ومظلات سواتر برجولات في القصيم'
           />
           <meta
             property='og:description'
-            content='Explore our wide range of tents, including khiyam, muzala, and muzalat. Perfect for your next adventure.'
+            content='اكتشف مجموعتنا الواسعة من الخيام والمظلات والسواتر والبرجولات في القصيم.'
           />
           <meta
             property='og:image'
@@ -65,7 +65,27 @@ function App() {
           />
           <meta
             name='twitter:card'
-            content='https://tents-f9b9d.web.app/images/slider1.jp'
+            content='https://tents-f9b9d.web.app/images/slider1.jpg'
+          />
+          <meta
+            name='robots'
+            content='index, follow'
+          />
+          <meta
+            name='geo.region'
+            content='SA-QSM'
+          />
+          <meta
+            name='geo.placename'
+            content='Al-Qassim, Saudi Arabia'
+          />
+          <meta
+            name='geo.position'
+            content='26.32;43.96'
+          />
+          <meta
+            name='ICBM'
+            content='26.32, 43.96'
           />
         </Helmet>
         <Dashboard>
@@ -184,3 +204,4 @@ function App() {
 }
 
 export default App;
+/** @format */

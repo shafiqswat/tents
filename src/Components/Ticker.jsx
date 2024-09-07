@@ -8,15 +8,33 @@ function Ticker() {
   const messages = [
     { text: "0590667013", link: "#" },
     {
-      text: "مدينة الخيام المظلات تفصيل خيام ملكي مظلات سواتر موقف سيارت مظلات مدارس القصيم بريده عنيزه 0500173090",
+      text: "مدينة الخيام المظلات - تفصيل خيام ملكي ومظلات وسواتر وموقف سيارات ومظلات مدارس القصيم بريده عنيزه 0500173090",
       link: "#",
     },
   ];
 
   return (
     <TickerContainer>
-      <div className='ticker flex-row text-justify'>
-        <div className='tickerTitle'>
+      <nav
+        className='ticker flex-row text-justify'
+        aria-label='تحديثات'>
+        <h1 style={{ display: "none" }}>
+          مظلات وسواتر القصيم{" "}
+          <strong>
+            للحدائق والأسطح والسيارات بخامات عالية جودة وبأفضل الخامات المستوردة
+            والمحلية، كما يوجد قماش بي في دي اف بتصاميم وأشكال حديثة وجديدة
+            للأسطح والحدائق، عليكم بالتواصل مع شركة حاتم للمقاولات لتركيب وتصميم
+            وتنفيذ أفضل وأجمل مظلات وسواتر، مظلات قماش للسيارات بأرقى وأجمل
+            التصاميم والأشكال الجذابة والرائعة.
+          </strong>
+          <strong>
+            مدينة الخيام المظلات تفصيل خيام ملكي مظلات سواتر موقف سيارت مظلات
+            مدارس القصيم بريده عنيزه
+          </strong>
+        </h1>
+        <div
+          className='tickerTitle'
+          aria-hidden='true'>
           <span className='typcn typcn-large typcn-arrow-sync'></span>
         </div>
         <div className='ticker-text lc-112'>
@@ -30,7 +48,11 @@ function Ticker() {
                   key={index}
                   className='textChild'>
                   <div className='textDirection'>
-                    <a href={message.link}>{message.text}</a>
+                    <a
+                      href={message.link}
+                      aria-label={message.text}>
+                      {message.text}
+                    </a>
                     <span className='typcn typcn-medium typcn-link-outline'></span>
                     &nbsp;&nbsp;
                   </div>
@@ -39,7 +61,7 @@ function Ticker() {
             </Marquee>
           </div>
         </div>
-      </div>
+      </nav>
     </TickerContainer>
   );
 }
@@ -150,6 +172,7 @@ const TickerContainer = styled.div`
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   @media (max-width: 600px) {
     .ticker {
       max-width: 97%;

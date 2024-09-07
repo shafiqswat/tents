@@ -14,12 +14,12 @@ function Dashboard({ children }) {
   const showBreadCrumb = currentPath !== "/";
 
   return (
-    <DashboardContainer>
+    <DashboardContainer role='main'>
       <Header />
-      <div id='center'>
+      <ContentArea id='center'>
         {showBreadCrumb && <BreadCrumb currentPath={currentPath} />}
         {children}
-      </div>
+      </ContentArea>
       <Ticker />
       <Footer />
     </DashboardContainer>
@@ -31,4 +31,12 @@ export default Dashboard;
 const DashboardContainer = styled.div`
   overflow: hidden;
   background-color: #f0f0f0;
+`;
+
+const ContentArea = styled.main`
+  padding: 20px;
+  /* Additional styles for better readability */
+  background-color: #fff; /* For contrast */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;

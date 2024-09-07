@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Importing react-helmet
 
 function Header() {
   useEffect(() => {
@@ -80,7 +81,28 @@ function Header() {
     };
   }, []);
   return (
-    <div className='header-wrapper'>
+    <header className='header-wrapper'>
+      <Helmet>
+        <title>مدينةالخيام المظلات</title>
+        <meta
+          name='description'
+          content='مدينة الخيام المظلات - تفصيل خيام ملكي ومظلات وسواتر وموقف سيارات ومظلات مدارس القصيم بريده عنيزه'
+        />
+      </Helmet>
+      <h1 style={{ display: "none" }}>
+        مظلات وسواتر القصيم{" "}
+        <strong>
+          للحدائق والأسطح والسيارات بخامات عالية جودة وبأفضل الخامات المستوردة
+          والمحلية، كما يوجد قماش بي في دي اف بتصاميم وأشكال حديثة وجديدة للأسطح
+          والحدائق، عليكم بالتواصل مع شركة حاتم للمقاولات لتركيب وتصميم وتنفيذ
+          أفضل وأجمل مظلات وسواتر، مظلات قماش للسيارات بأرقى وأجمل التصاميم
+          والأشكال الجذابة والرائعة.
+        </strong>
+        <strong>
+          مدينة الخيام المظلات تفصيل خيام ملكي مظلات سواتر موقف سيارت مظلات
+          مدارس القصيم بريده عنيزه
+        </strong>
+      </h1>
       <div className='header-wrapper-background'>
         <div className='header flex-row-reverse'>
           <div className='header-logo header-logo-lc-mc mc-35 lc-25 sc-hide mc-show lc-show'>
@@ -399,7 +421,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

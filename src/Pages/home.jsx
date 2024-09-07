@@ -1,6 +1,7 @@
 /** @format */
+/** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Slider from "../Components/layout/slider";
 import CardComponent from "../Components/layout/Card";
@@ -8,8 +9,31 @@ import data from "../Components/assets/cardItem";
 import BreadCrumb from "../Components/BreadCrumb";
 
 function Home() {
+  // Setting the document title and meta description for SEO
+  useEffect(() => {
+    document.title = "مدينةالخيام المظلات"; // Title in Arabic
+    const metaDescription = document.createElement("meta");
+    metaDescription.name = "مظلات وسواتر القصيم";
+    metaDescription.content =
+      " للحدائق والأسطح والسيارات بخامات عالية جودة وبأفضل الخامات المستوردة   والمحلية، كما يوجد قماش بي في دي اف بتصاميم وأشكال حديثة وجديدة للأسطح   والحدائق، عليكم بالتواصل مع شركة حاتم للمقاولات لتركيب وتصميم وتنفيذ   أفضل وأجمل مظلات وسواتر، مظلات قماش للسيارات بأرقى وأجمل التصاميم  والأشكال الجذابة والرائعة. ";
+    document.head.appendChild(metaDescription);
+  }, []);
   return (
-    <div>
+    <main>
+      <h1 style={{ display: "none" }}>
+        مظلات وسواتر القصيم
+        <strong>
+          للحدائق والأسطح والسيارات بخامات عالية جودة وبأفضل الخامات المستوردة
+          والمحلية، كما يوجد قماش بي في دي اف بتصاميم وأشكال حديثة وجديدة للأسطح
+          والحدائق، عليكم بالتواصل مع شركة حاتم للمقاولات لتركيب وتصميم وتنفيذ
+          أفضل وأجمل مظلات وسواتر، مظلات قماش للسيارات بأرقى وأجمل التصاميم
+          والأشكال الجذابة والرائعة.
+        </strong>
+        <strong>
+          مدينة الخيام المظلات تفصيل خيام ملكي مظلات سواتر موقف سيارت مظلات
+          مدارس القصيم بريده عنيزه
+        </strong>
+      </h1>
       {/* <BreadCrumb /> */}
       <Slider />
       <WhatsappImages>
@@ -18,7 +42,7 @@ function Home() {
             <a href='https://wa.me/966500173090'>
               <img
                 src='/images/whatsappImage1.gif'
-                alt='whatsappGif'
+                alt='whatsappImage1'
               />
             </a>
           </div>
@@ -26,21 +50,26 @@ function Home() {
         <div className='ads-show'>
           <a
             href='https://wa.me/966500173090'
-            target='_blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
+            {" "}
+            {/* Added rel for security */}
             <img
               src='/images/whatsappImage2.gif'
-              alt='WhatsappGif'
+              alt='whatsappImage2'
             />
           </a>
         </div>
       </WhatsappImages>
+      <h1 style={{ display: "none" }}>الصفحة الرئيسية - متجرنا</h1>{" "}
+      {/* Hidden heading for SEO */}
       {data.map((item, index) => (
         <CardComponent
           key={index}
           item={item}
         />
       ))}
-    </div>
+    </main>
   );
 }
 
