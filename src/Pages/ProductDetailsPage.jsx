@@ -10,14 +10,28 @@ const ProductDetailsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Log the id and aggregated data for debugging
+    // Log the id for debugging
     console.log("Product ID from URL:", id);
+
+    // Check if id is valid
+    if (!id) {
+      console.error("No ID found in the URL.");
+      setLoading(false);
+      return;
+    }
+
+    // Log aggregated data for debugging
     console.log("Aggregated Data:", aggregatedData);
 
-    // Convert id to string if necessary and find the product
+    // Find the product based on the ID
     const foundProduct = aggregatedData.find(
-      (item) => item.id.toString() === id
+      (item) => item.id && item.id.toString() === id
     );
+
+    if (!foundProduct) {
+      console.error("Product not found for ID:", id);
+    }
+
     setProduct(foundProduct);
     setLoading(false);
   }, [id]);
