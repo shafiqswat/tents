@@ -16,7 +16,9 @@ const SearchPage = () => {
         searchResults.length > 0 ? (
           <ul>
             {searchResults.map((item, index) => (
-              <li key={index}>
+              <li
+                key={index}
+                style={{ listStyle: "none" }}>
                 <img
                   src={item.cardImage}
                   alt={item.cardTitle}
