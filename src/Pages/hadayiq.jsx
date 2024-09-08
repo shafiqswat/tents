@@ -1,10 +1,10 @@
 /** @format */
 
 import React, { useEffect } from "react";
-import biutShaerItem from "../Components/assets/BiutShaer";
 import CardComponent from "../Components/layout/Card";
+import hadayiqItem from "../Components/assets/Hadayiq";
 
-function BiutShaer() {
+function Hadayiq() {
   // Setting the document title and meta description for SEO
   useEffect(() => {
     document.title = "مدينةالخيام المظلات"; // Title in Arabic
@@ -32,7 +32,7 @@ function BiutShaer() {
         </strong>
       </h1>
       {/* Hidden heading for SEO */}
-      {biutShaerItem.map((item, index) => (
+      {hadayiqItem.map((item, index) => (
         <CardComponent
           key={item.id || index} // Use unique id if available
           item={item}
@@ -42,4 +42,4 @@ function BiutShaer() {
   );
 }
 
-export default BiutShaer;
+export default Hadayiq;

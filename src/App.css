@@ -139,7 +139,12 @@ body a:hover {
 .toolbar-option-separator {
   height: 10px;
 }
-
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+}
 /*  */
 /*  */
 /*  */

@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./Components/layout/dashboard";
 import { Helmet } from "react-helmet";
+import SearchPage from "./Pages/search";
+import ProductDetailsPage from "./Pages/ProductDetailsPage";
 
 // Lazy load the components
 const Home = lazy(() => import("./Pages/home"));
@@ -194,6 +196,15 @@ function App() {
               <Route
                 path='/wasawatirfialqasim'
                 element={<WasawatirFiAlriyad />}
+              />
+              <Route
+                path='/search'
+                element={<SearchPage />}
+              />
+              {/* Other routes... */}
+              <Route
+                path='/product/:id'
+                element={<ProductDetailsPage />}
               />
             </Routes>
           </Suspense>

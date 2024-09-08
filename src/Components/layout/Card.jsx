@@ -1,14 +1,18 @@
 /** @format */
 
 import React from "react";
+import { useNavigate } from "react-router";
 import styled from "styled-components";
-import { Card } from "antd";
 
 function CardComponent({ item }) {
   const currentUrl = window.location.href;
   const textToShare = encodeURIComponent(item.cardTitle);
   const urlToShare = encodeURIComponent(currentUrl);
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate(`/product/${item.id}`);
+  };
   const handleShare = (platform) => {
     let shareUrl = "";
 
@@ -36,7 +40,7 @@ function CardComponent({ item }) {
   };
 
   return (
-    <CardContainer>
+    <CardContainer onClick={handleClick}>
       <div className='cardContent'>
         <div className='imageWrapper'>
           <img
@@ -110,7 +114,7 @@ const CardContainer = styled.div`
   .cardContent {
     max-width: 97%;
     margin: 0 0 3% 0;
-    height: 97%;
+    height: fit-content;
     background: #ffffff !important;
     box-shadow: 0px 0px 5px #969696;
     line-height: 1.4;

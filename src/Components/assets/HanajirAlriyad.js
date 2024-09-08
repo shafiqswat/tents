@@ -2,29 +2,35 @@
 
 const hanajirItem = [
   {
-    cardImage: "images/hanajir1.jpg",
+    id: 66,
+    cardImage: "/images/hanajir1.jpg",
     cardTitle:
       "مقاول هناجر حديد القصيم بريده عنيزه تركيب هناجر حديد افضل اسعار الهناجر القصيم بريده عنيزه",
   },
   {
-    cardImage: "images/hanajir2.jpg",
+    id: 67,
+    cardImage: "/images/hanajir2.jpg",
     cardTitle: "هناجر ومصانع الورش ومستودعات مؤسسة اختيار القصيم بريده عنيزه",
   },
   {
-    cardImage: "images/hanajir3.jpg",
+    id: 68,
+    cardImage: "/images/hanajir3.jpg",
     cardTitle:
       "شركة تركيب هناجر استيل | تصميم هناجرستيل بأعلى الإمكانيات بالسعودية",
   },
   {
-    cardImage: "images/hanajir4.png",
+    id: 69,
+    cardImage: "/images/hanajir4.png",
     cardTitle: "تصنيع وتركيب الهناجر ",
   },
   {
-    cardImage: "images/hanajir5.png",
+    id: 70,
+    cardImage: "/images/hanajir5.png",
     cardTitle: "صور هناجر",
   },
   {
-    cardImage: "images/hanajir6.png",
+    id: 71,
+    cardImage: "/images/hanajir6.png",
     cardTitle: "تركيب هناجر",
   },
 ];

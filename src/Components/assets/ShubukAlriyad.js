@@ -2,7 +2,8 @@
 
 const shubukItem = [
   {
-    cardImage: "images/biutshaer1.jpeg",
+    id: 134,
+    cardImage: "/images/biutshaer1.jpeg",
     cardTitle:
       "تركيب شبوك القصيم بريده عنيزه | أفضل اسعار و أنواع الشبوك 0500173090",
   },

@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet"; // Importing react-helmet
+import SearchComponent from "./Search";
 
 function Header() {
   useEffect(() => {
@@ -232,7 +233,8 @@ function Header() {
         <div className='toolbar-option flex-row sc-120 mc-85 lc-95'>
           <div className='sc-120 mc-40 lc-40'>
             <div>
-              <form
+              <SearchComponent />
+              {/* <form
                 method='get'
                 id='searchForm'>
                 <input
@@ -248,7 +250,7 @@ function Header() {
                   pattern='.{2,}'
                   required
                 />
-              </form>
+              </form> */}
               <div className='autocomplete-suggestions'></div>
             </div>
           </div>
@@ -338,13 +340,13 @@ function Header() {
                 <NavLink to='/manatiqalsueudia'>مظلات مناطق السعودية</NavLink>
               </li>
               <li>
-                <NavLink to='/hanajiralriyad'>هناجر الرياض</NavLink>
+                <NavLink to='/hanajiralqasim'>هناجر الرياض</NavLink>
               </li>
               <li>
                 <NavLink to='/jalasatwaburjulat'>مظلات جلسات وبرجولات</NavLink>
               </li>
               <li>
-                <NavLink to='/shubukalriyad'>شبوك القصيم بريده عنيزه</NavLink>
+                <NavLink to='/alqasim'>شبوك القصيم بريده عنيزه</NavLink>
               </li>
               <li>
                 <NavLink to='/biutshaer'>بيوت شعر</NavLink>

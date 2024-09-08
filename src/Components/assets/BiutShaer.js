@@ -2,7 +2,8 @@
 
 const biutShaerItem = [
   {
-    cardImage: "images/biutshaer1.jpeg",
+    id: 66,
+    cardImage: "/images/biutshaer1.jpeg",
     cardTitle: "بيوت شعر وخيام تفصيل وتركيب شركة اختيار الرياض",
   },
 ];
